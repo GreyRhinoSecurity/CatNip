@@ -1,11 +1,11 @@
 # 🐾 CatNip - Multi-Engine NTLM Cracker
 
 **by [GreyRhinoSecurity](https://github.com/GreyRhinoSecurity)**  
-🔒 Hashcat + John + Benchmark + Rules = One purring powerhouse 😼
+🔒 Hashcat + John + Rule Picker + CEWL + HTML Dashboard = Fully Weaponized 😼
 
 ---
 
-![Version](https://img.shields.io/badge/version-v2.8-blue)
+![Version](https://img.shields.io/badge/version-v3.1.1-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Shell](https://img.shields.io/badge/language-shell-lightgrey)
 
@@ -13,57 +13,70 @@
 
 ## 📸 Live Demo
 
-![CatNip cracking](screenshots/catnip_v28_cracking.png)
+![CatNip cracking](screenshots/catnip_v311_cracking.png)
 
 ---
 
 ## 🧠 Features
 
-| Feature            | Status | Description                              |
-|--------------------|--------|------------------------------------------|
-| 🔓 NTLM Cracking   | ✅     | Supports hashcat, john, or both           |
-| 🎯 Rule Picker     | ✅     | Select from system .rules or custom       |
-| ⚡ Benchmark Mode  | ✅     | Compare cracking speeds live              |
-| 📦 .deb Installer  | ✅     | Easy install on Kali/Debian               |
-| 📜 Install Script  | ✅     | `curl | bash` one-liner setup             |
-| 🐳 Docker Support  | 🚧     | Coming soon                               |
-| 🌐 Web UI (Flask)  | 🚧     | Planned                                   |
+| Feature              | Status | Description                                        |
+|----------------------|--------|----------------------------------------------------|
+| 🔓 NTLM Cracking     | ✅     | Supports Hashcat, John, or both                    |
+| 🎯 Rule Picker       | ✅     | System & custom rule file support                  |
+| ⚠️ Path Validation   | ✅     | Validates all file paths                           |
+| 🧠 Smart Wordlist Gen| ✅     | Username + keyword + CEWL + year combo             |
+| 📊 Benchmark Mode    | ✅     | Hashcat & John performance testing                 |
+| 🧾 HTML Dashboard    | ✅     | Auto-generated + auto-open in browser              |
+| 📦 .deb Installer    | ✅     | Easy to install, self-contained                    |
+| 📜 Install Script    | ✅     | One-liner setup with curl                          |
+| 🐳 Docker Support    | 🚧     | Coming soon                                        |
+| 🌐 Web UI (Flask)    | 🚧     | Planned                                            |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Install (Latest)
 
-Install from GitHub Releases:
 ```bash
-curl -sSL https://raw.githubusercontent.com/GreyRhinoSecurity/CatNip/main/install_catnip.sh | bash
+wget https://github.com/GreyRhinoSecurity/CatNip/releases/latest/download/catnip_3.1.1_all.deb
+sudo dpkg -i catnip_3.1.1_all.deb
 catnip
 ```
 
 ---
 
-## 💻 Usage
+### 🐾 One-Line Install (optional)
 
-Run in interactive terminal:
+```bash
+curl -sSL https://raw.githubusercontent.com/GreyRhinoSecurity/CatNip/main/install_catnip.sh | bash
+```
+
+---
+
+## 🔍 Usage
+
 ```bash
 catnip
 ```
 
 Choose:
-- cracking mode (hashcat/john/both)
-- rule set (default or custom)
-- GPU tuning
-- or benchmark engines
+- [1] Crack NTLM Hashes
+- [2] Run Benchmarks
+- [3] Generate Smart Wordlist (username + CEWL)
+
+Outputs:
+- 📂 `catnip_custom_wordlist.txt`
+- 📊 `catnip_cracked_dashboard.html`
 
 ---
 
 ## 🛣️ Roadmap
 
-- [x] v2.8: Rule selector + benchmarks
-- [x] `.deb` + auto installer
-- [ ] Docker container
-- [ ] HTML dashboard
-- [ ] Flask web interface
-- [ ] Smart wordlist generator
+- [x] Rule selector + validation
+- [x] Wordlist generation with CEWL
+- [x] Auto-crack after generate
+- [x] Auto-open HTML dashboard
+- [ ] Docker container (coming)
+- [ ] Web UI (Flask)
 
 ---
 
