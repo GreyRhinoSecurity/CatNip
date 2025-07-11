@@ -1,0 +1,1 @@
+#!/bin/bash\necho 'placeholder for v3.2 cracking script'
