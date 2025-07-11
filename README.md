@@ -1,11 +1,11 @@
 # 🐾 CatNip - Multi-Engine NTLM Cracker
 
 **by [GreyRhinoSecurity](https://github.com/GreyRhinoSecurity)**  
-🔒 Hashcat + John + Rule Picker + CEWL + HTML Dashboard = Fully Weaponized 😼
+🔒 Hashcat + John + CEWL + Dashboard = Fully Armed 😼
 
 ---
 
-![Version](https://img.shields.io/badge/version-v3.1.1-blue)
+![Version](https://img.shields.io/badge/version-v3.2.1-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Shell](https://img.shields.io/badge/language-shell-lightgrey)
 
@@ -13,7 +13,7 @@
 
 ## 📸 Live Demo
 
-![CatNip cracking](screenshots/catnip_v311_cracking.png)
+![CatNip cracking](screenshots/catnip_v321_cracking.png)
 
 ---
 
@@ -21,30 +21,31 @@
 
 | Feature              | Status | Description                                        |
 |----------------------|--------|----------------------------------------------------|
-| 🔓 NTLM Cracking     | ✅     | Supports Hashcat, John, or both                    |
-| 🎯 Rule Picker       | ✅     | System & custom rule file support                  |
-| ⚠️ Path Validation   | ✅     | Validates all file paths                           |
-| 🧠 Smart Wordlist Gen| ✅     | Username + keyword + CEWL + year combo             |
-| 📊 Benchmark Mode    | ✅     | Hashcat & John performance testing                 |
-| 🧾 HTML Dashboard    | ✅     | Auto-generated + auto-open in browser              |
-| 📦 .deb Installer    | ✅     | Easy to install, self-contained                    |
-| 📜 Install Script    | ✅     | One-liner setup with curl                          |
-| 🐳 Docker Support    | 🚧     | Coming soon                                        |
-| 🌐 Web UI (Flask)    | 🚧     | Planned                                            |
+| 🔓 NTLM Cracking     | ✅     | Hashcat, John, or both                             |
+| 🧠 Smart Wordlist Gen| ✅     | Username + keywords + years + CEWL scraping        |
+| 🎯 Rule Picker       | ✅     | Built-in + custom rules                            |
+| 📂 Path Validation   | ✅     | Checks wordlist, rule, hash path before run        |
+| 📊 Benchmark Mode    | ✅     | Hashcat + John performance tests                   |
+| 🧾 HTML Dashboard    | ✅     | Now shows user, password, source + crack time      |
+| 🌐 Auto-Opens Browser| ✅     | Uses xdg-open or prints clickable file:// path     |
+| 📦 .deb Installer    | ✅     | Easy install for Kali, Debian                      |
+| 📜 install.sh        | ✅     | Curl-ready one-liner installer                     |
+| 🐳 Docker Support    | 🚧     | In progress                                        |
+| 🌐 Web UI            | 🚧     | Flask integration planned                          |
 
 ---
 
-## 🚀 Quick Install (Latest)
+## 🚀 Quick Install
 
 ```bash
-wget https://github.com/GreyRhinoSecurity/CatNip/releases/latest/download/catnip_3.1.1_all.deb
-sudo dpkg -i catnip_3.1.1_all.deb
+wget https://github.com/GreyRhinoSecurity/CatNip/releases/latest/download/catnip_3.2.1_all.deb
+sudo dpkg -i catnip_3.2.1_all.deb
 catnip
 ```
 
 ---
 
-### 🐾 One-Line Install (optional)
+### 🐾 One-Line Install
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/GreyRhinoSecurity/CatNip/main/install_catnip.sh | bash
@@ -52,31 +53,33 @@ curl -sSL https://raw.githubusercontent.com/GreyRhinoSecurity/CatNip/main/instal
 
 ---
 
-## 🔍 Usage
+## 🧪 Usage
 
 ```bash
 catnip
 ```
 
-Choose:
-- [1] Crack NTLM Hashes
-- [2] Run Benchmarks
-- [3] Generate Smart Wordlist (username + CEWL)
+Menu:
+- [1] Crack NTLM Hashes 🔓
+- [2] Run Benchmarks ⚡
+- [3] Generate Smart Wordlist 🧠 (with CEWL scrape)
 
-Outputs:
-- 📂 `catnip_custom_wordlist.txt`
-- 📊 `catnip_cracked_dashboard.html`
+Output:
+- 🧾 `catnip_cracked_dashboard.html`
+- 📂 Automatically opens in browser
+- ✅ Table includes user, password, source, crack time
 
 ---
 
 ## 🛣️ Roadmap
 
-- [x] Rule selector + validation
-- [x] Wordlist generation with CEWL
-- [x] Auto-crack after generate
-- [x] Auto-open HTML dashboard
-- [ ] Docker container (coming)
-- [ ] Web UI (Flask)
+- [x] Crack engine selector
+- [x] Rule picker + validation
+- [x] Smart wordlist generator
+- [x] CEWL offline scraping
+- [x] HTML dashboard (multi-source + timestamps)
+- [ ] Docker container
+- [ ] Web UI
 
 ---
 
