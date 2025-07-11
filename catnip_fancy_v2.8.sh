@@ -21,7 +21,7 @@ echo "    ( o.o )   by GreyRhinoSecurity 🐾 and Kali-Pig"
 echo "     > ^ <    hashcat + john + rules + benchmark"
 echo -e "${RST}"
 echo -e "${MAG}╔════════════════════════════════════════════════════════════╗"
-echo -e "║ ${BLU}CatNip - Terminal Edition${MAG} | ${YEL}v$VERSION${MAG}| full cracking engine 🧠   ║"
+echo -e "║ ${BLU}CatNip - Terminal Edition${MAG} | ${YEL}v$VERSION${MAG}| full cracking engine 🧠║"
 echo -e "╚════════════════════════════════════════════════════════════╝${RST}"
 
 echo -e "\n🧠 ${CYN}Select mode:${RST}"
