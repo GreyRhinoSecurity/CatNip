@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# === CatNip v2.9 Installer ===
+# === CatNip v3.1.1 Installer ===
 REPO_URL="https://github.com/GreyRhinoSecurity/CatNip"
-DEB_FILE="catnip_2.9_all.deb"
+DEB_FILE="catnip_3.1.1_all.deb"
 
-echo "🐾 Installing CatNip NTLM Cracker from $REPO_URL ..."
+echo "🐾 Installing CatNip from $REPO_URL ..."
 TEMP_DIR=$(mktemp -d)
 cd "$TEMP_DIR"
 
-echo "⬇️ Downloading .deb package..."
+echo "⬇️ Downloading latest .deb..."
 wget "$REPO_URL/releases/latest/download/$DEB_FILE" -O "$DEB_FILE"
 
 if [ ! -f "$DEB_FILE" ]; then
@@ -23,5 +23,4 @@ echo "🧹 Cleaning up..."
 cd ~
 rm -rf "$TEMP_DIR"
 
-echo "✅ CatNip v2.9 installed! Run it using:"
-echo "    catnip"
+echo "✅ CatNip installed! Run it using: catnip"
