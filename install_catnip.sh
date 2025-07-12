@@ -2,7 +2,7 @@
 
 # === CatNip v3.3 Installer ===
 REPO_URL="https://github.com/GreyRhinoSecurity/CatNip"
-DEB_FILE="catnip_3.3_all.deb"
+DEB_FILE="catnip_3.2.1_all.deb"
 
 echo "🐾 Installing CatNip from $REPO_URL ..."
 TEMP_DIR=$(mktemp -d)
