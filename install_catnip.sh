@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# === CatNip v3.2.1 Installer ===
+# === CatNip v3.3 Installer ===
 REPO_URL="https://github.com/GreyRhinoSecurity/CatNip"
-DEB_FILE="catnip_3.2.1_all.deb"
+DEB_FILE="catnip_3.3_all.deb"
 
 echo "🐾 Installing CatNip from $REPO_URL ..."
 TEMP_DIR=$(mktemp -d)
@@ -23,5 +23,5 @@ echo "🧹 Cleaning up..."
 cd ~
 rm -rf "$TEMP_DIR"
 
-echo "✅ CatNip v3.2.1 installed! Run it using:"
+echo "✅ CatNip v3.3 installed! Run it using:"
 echo "    catnip"
