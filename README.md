@@ -40,7 +40,7 @@
 
 ```bash
 wget https://github.com/GreyRhinoSecurity/CatNip/releases/latest/download/catnip_3.3_all.deb
-sudo dpkg -i catnip_3.3_all.deb
+sudo dpkg -i catnip_3.2.1_all.deb
 catnip
 ```
 
